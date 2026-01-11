@@ -130,9 +130,45 @@ export function ValueProposition() {
   }, []);
 
   return (
-    <section className="py-24 pb-[20vh] px-6 bg-[#FBF5DF]/50">
+    <section className="py-24 md:pb-[20vh] px-6 bg-[#FBF5DF]/50">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        {/* Mobile Layout - 설명 -> 이미지 순서로 반복 */}
+        <div className="md:hidden space-y-6">
+          {features.map((feature, index) => (
+            <div key={feature.id} className="space-y-2">
+              {/* 설명 카드 */}
+              <div
+                ref={(el) => {
+                  cardRefs.current[index] = el;
+                }}
+                className="p-6 rounded-2xl"
+              >
+                <div className="w-12 h-12 flex items-start justify-start text-black mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-black">
+                  {feature.title}
+                </h3>
+                <p className="text-base text-black/50">{feature.description}</p>
+              </div>
+              {/* 이미지 */}
+              <div className="relative h-[300px] rounded-2xl overflow-hidden">
+                <Image
+                  src={feature.image}
+                  alt={feature.title}
+                  fill
+                  className={`object-contain ${
+                    feature.id === "export" ? "scale-75" : ""
+                  }`}
+                  priority={index === 0}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Layout - 기존 레이아웃 유지 */}
+        <div className="hidden md:grid md:grid-cols-2 gap-16 items-start">
           {/* Left side - Features cards */}
           <div className="space-y-8">
             {features.map((feature, index) => (
@@ -172,7 +208,7 @@ export function ValueProposition() {
           </div>
 
           {/* Right side - Sticky Image */}
-          <div className="md:sticky md:top-[calc(50vh-300px)] h-[500px] md:h-[600px]">
+          <div className="sticky top-[calc(50vh-300px)] h-[600px]">
             <div className="relative h-full w-full rounded-2xl overflow-hidden">
               {features.map((feature, index) => (
                 <div

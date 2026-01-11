@@ -17,13 +17,13 @@ function LayoutCard({
 
 export function Features() {
   return (
-    <section id="features" className="py-20 px-6 bg-[#FBF5DF]/50">
+    <section id="features" className="py-12 md:py-20 px-6 bg-[#FBF5DF]/50">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl font-bold mb-4">Split Layouts</h2>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Row 1 */}
           {/* Single */}
           <LayoutCard

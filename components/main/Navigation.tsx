@@ -13,14 +13,14 @@ export function Navigation() {
             height={28}
             className="w-7 h-7"
           />
-          <span className="font-semibold">Riftshot</span>
+          <span className="font-semibold hidden md:block">Riftshot</span>
         </div>
         <a
           href="#"
           className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black/75 transition-colors"
         >
           <ChromeIcon className="w-4 h-4" />
-          Add to Chrome
+          Add<span className="hidden sm:inline"> to Chrome</span>
         </a>
       </div>
     </nav>

@@ -11,9 +11,9 @@ const showcaseImages = [
 
 export function Showcase() {
   return (
-    <section className="py-24 px-6 bg-[#FBF5DF]/50">
+    <section className="py-12 md:py-24 px-6 bg-[#FBF5DF]/50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6 md:mb-16">
           <h2 className="text-2xl font-bold mb-2">Made with Riftshot</h2>
           <p className="text-lg text-black/50">
             See what creators are building

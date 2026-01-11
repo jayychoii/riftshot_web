@@ -40,14 +40,14 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold font-playfair tracking-tight mb-8">
-            Full Screenshot,
+          <h1 className="text-4xl md:text-7xl font-bold font-playfair tracking-tight mb-4 md:mb-8">
+            Full Screenshot
             <br />
             <span className="opacity-75">Multiple Splits</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg text-black max-w-2xl mx-auto mb-10 leading-tight ">
+          <p className="text-base md:text-lg text-black max-w-2xl mx-auto mb-10 leading-tight ">
             Capture your entire webpage and instantly split it into beautiful
             layouts.
             <br />
@@ -59,7 +59,7 @@ export function Hero() {
           <div className="flex items-center justify-center">
             <a
               href="#"
-              className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-black/75 transition-all shadow-lg"
+              className="flex items-center gap-3 bg-black text-white px-6 py-2.5 md:px-8 md:py-4 rounded-full text-lg font-medium hover:bg-black/75 transition-all shadow-lg"
             >
               <ChromeIcon className="w-5 h-5" />
               Add to Chrome
