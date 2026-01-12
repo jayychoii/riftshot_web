@@ -64,7 +64,7 @@ export default function AuthPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#FBF5DF]/50 px-4">
       <div className="w-full max-w-sm">
-        <div className="p-8 bg-black/5 backdrop-blur-sm rounded-3xl border border-black/10">
+        <div className="p-8 bg-black/8 backdrop-blur-xl rounded-2xl">
           <div className="flex justify-center mb-6">
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -129,7 +129,7 @@ export default function AuthPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-2.5 bg-white border border-black/10 rounded-xl focus:outline-none focus:border-black/30 transition-colors text-sm text-black/80 placeholder:text-black/30"
+              className="w-full px-4 py-2.5 bg-white border border-black/10 rounded-xl focus:outline-none focus:border-black/20 transition-colors text-sm text-black/80 placeholder:text-black/30"
               placeholder="Enter your email"
             />
 
