@@ -18,6 +18,17 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Riftshot",
   description: "Beautiful full-page screenshots with customizable layouts",
+  openGraph: {
+    title: "Riftshot",
+    description: "Beautiful full-page screenshots with customizable layouts",
+    images: ["/main/5.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Riftshot",
+    description: "Beautiful full-page screenshots with customizable layouts",
+    images: ["/main/5.png"],
+  },
 };
 
 export default function RootLayout({
