@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ChromeIcon } from "../../icons/ChromeIcon";
 
 const VIDEO_URL =
-  "https://pub-bde532205e72435fa935e2c534604e62.r2.dev/main/riftshot_main_optimized.mp4";
+  "https://pub-bde532205e72435fa935e2c534604e62.r2.dev/main/riftshot_x.mp4";
 
 function LayoutPreview() {
   const [isLoaded, setIsLoaded] = useState(false);
