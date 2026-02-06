@@ -8,8 +8,8 @@ import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/lib/supabase";
 
 const navLinks = [
-  { href: "#", label: "Features" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/#", label: "Features" },
+  { href: "/#pricing", label: "Pricing" },
   { href: "/changelog", label: "Changelog" },
 ];
 
