@@ -56,20 +56,22 @@ export function Pricing() {
   return (
     <section id="pricing" className="py-12 md:py-24 px-6 bg-[#FBF5DF]/50">
       <div className="max-w-xl mx-auto">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-2">Unlock Everything</h2>
           <p className="text-base md:text-lg text-black/50">
             Pay once, use forever. No subscriptions.
+            <br />
+            Now is the lowest price ever.
           </p>
         </div>
 
         <div className="bg-[#F5EDD3] rounded-2xl p-8 shadow-lg">
           <div className="text-center mb-8">
-            <div className="inline-block text-black text-xs font-medium mb-4">
+            <div className="inline-block text-black text-sm font-medium mb-4">
               LIFETIME ACCESS
             </div>
             <div className="flex items-baseline justify-center gap-1">
-              <span className="text-5xl md:text-6xl font-bold">$35</span>
+              <span className="text-5xl md:text-6xl font-bold">$9.99</span>
             </div>
           </div>
 
@@ -104,8 +106,8 @@ export function Pricing() {
             {loading
               ? "Processing..."
               : authLoading
-              ? "Loading..."
-              : "Get Riftshot Now"}
+                ? "Loading..."
+                : "Get Riftshot Now"}
           </button>
         </div>
       </div>

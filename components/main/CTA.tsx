@@ -6,11 +6,12 @@ export function CTA() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-[#F5EDD3] rounded-2xl p-12 md:p-16 text-center shadow-lg">
           <h2 className="text-xl md:text-2xl font-bold mb-2 text-black">
-            Ready to Split Your Screenshots?
+            Ready to Promote Your Work?
           </h2>
           <p className="text-base md:text-lg text-black/50 mb-6">
-            Stop taking boring screenshots. Start creating visuals that get
-            noticed.
+            Stop taking boring screenshots.
+            <br />
+            Start creating visuals that get noticed.
           </p>
           <a
             href="https://chromewebstore.google.com/detail/riftshot/ggfcmgjjafcapbmclbehjkcbjpbgpfia"
